@@ -1,0 +1,7 @@
+.fab {
+  color: $silver;
+  &:hover {
+      text-decoration: none;
+      color: $silverdarker;
+    }
+}
