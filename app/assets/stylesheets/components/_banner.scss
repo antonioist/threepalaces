@@ -9,4 +9,28 @@
 }
 .strenghts {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -32px;
+  .strenght-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // flex-grow: 1;
+    height: 100%;
+    p {
+      text-align: center;
+    }
+    .fas {
+      font-size: 32px;
+      color: $silver;
+    }
+    .text-strenghts {
+      margin-top: -8px;
+    }
+    .title-strenghts {
+      font-size: 24px;
+    }
+  }
 }
