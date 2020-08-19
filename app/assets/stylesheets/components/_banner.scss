@@ -1,10 +1,11 @@
 .banner {
   background-size: cover;
-  background-position: inherit;
+  background-position: center;
   padding: 150px 0;
-  height: 80vh;
-  position: relative;
-  top: -70px;
+  // height: 70vh;
+  // position: relative;
+  // top: -70px;
+  width: 100%;
   border-bottom: 1px solid rgba(255,255,255,0.2);
   .container {
     height: 100%;
@@ -23,7 +24,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    // flex-grow: 1;
+    flex-grow: 1;
+    max-width: 30%;
     height: 100%;
     p {
       text-align: center;
@@ -40,5 +42,60 @@
       font-size: 24px;
       font-family: 'Dancing Script', cursive;
     }
+  }
+}
+.canner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.canner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.canner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .banner {
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .banner {
+    // max-height: auto;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .banner {
+    // width: 33%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .banner {
+    height: 70vh;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .banner {
+    height: 70vh;
   }
 }
