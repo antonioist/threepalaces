@@ -27,17 +27,25 @@
   }
 }
 .strenghts {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  // display: flex;
+  // justify-content: space-evenly;
+  // align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  margin: 0 auto;
   margin-top: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+  position: relative;
+  top: 200px;
   .strenght-box {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-grow: 1;
-    max-width: 30%;
+    // max-width: 30%;
     height: 100%;
     p {
       text-align: center;
@@ -57,7 +65,18 @@
   }
 }
 
-
+.info-contact-me {
+  text-align: center;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 28vh;
+  p {
+    margin: 0;
+  }
+}
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .banner {
@@ -68,6 +87,9 @@
     position: relative;
     bottom: 58px;
     right: 32px;
+  }
+  .strenghts {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -84,6 +106,25 @@
     // bottom: 58px;
     // right: 32px;
   }
+
+  .strenghts {
+    grid-template-columns: 1fr;
+    p {
+      font-size: 40px;
+    }
+  }
+  #title1 {
+    font-size: 48px;
+  }
+
+  #title2 {
+    font-size: 48px;
+  }
+
+  #title3 {
+    font-size: 48px;
+  }
+
 }
 
 // Medium devices (tablets, 768px and up)
@@ -99,6 +140,24 @@
     bottom: 80px;
     right: 32px;
   }
+
+  .strenghts {
+        // font-size: 40px;
+        // grid-template-columns: 1fr;
+  }
+
+//   .info-contact-me {
+//   text-align: center;
+//   font-size: 32px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: flex-end;
+//   height: 38vh;
+//   p {
+//     margin: 0;
+//   }
+// }
 }
 
 // Large devices (desktops, 992px and up)
@@ -112,6 +171,24 @@
   }
   .strenghts {
     margin-top: -32px;
+    grid-template-columns: 1fr 1fr 1fr;
+    p {
+      font-size: 16px
+    }
+  }
+  .title-strenghts {
+    font-size: 24px;
+  }
+  #title1 {
+    font-size: 24px;
+  }
+
+  #title2 {
+    font-size: 24px;
+  }
+
+  #title3 {
+    font-size: 24px;
   }
 }
 
@@ -124,6 +201,19 @@
     top: -80px;
   }
   .strenghts {
-    margin-top: -32px;
+    margin-top: -64px;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: inherit;
+  }
+  .title-strenghts {
+    font-size: 24px;
+  }
+  .info-contact-me {
+    text-align: center;
+    font-size: 12px;
+    height: auto;
+    p {
+      margin: 0;
+    }
   }
 }
