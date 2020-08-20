@@ -18,6 +18,8 @@
     p {
       font-family: 'Dancing Script', cursive;
       font-size: 40px;
+      margin: 0;
+      color: $skyblue;
     }
     .container-p {
       width: 400px;
@@ -61,20 +63,41 @@
   .banner {
 
   }
+  .container {
+    // max-width: 720px;
+    position: relative;
+    bottom: 58px;
+    right: 32px;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   .banner {
     // max-height: auto;
+    // position: absolute;
 
+  }
+  .container {
+    // max-width: 720px;
+    // position: relative;
+    // bottom: 58px;
+    // right: 32px;
   }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .banner {
-    // width: 33%;
+    // max-height: auto;
+    // position: absolute;
+
+  }
+  .container {
+    // max-width: 720px;
+    position: relative;
+    bottom: 80px;
+    right: 32px;
   }
 }
 
